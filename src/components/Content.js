@@ -6,57 +6,50 @@ const Content = () => {
       <div className="card-deck mb-3 text-center">
         <div className="card mb-4 box-shadow">
           <div className="card-header">
-            <h4 className="my-0 font-weight-normal">Membership</h4>
+            <h2 className="my-0 font-weight-normal">1:00 PM</h2>
           </div>
           <div className="card-body">
-            <h1 className="card-title pricing-card-title">
-              $$ <small className="text-muted">/ mo</small>
-            </h1>
-            <ul className="list-unstyled mt-3 mb-4">
-              <li>line 1</li>
-              <li>line 2</li>
-              <li>line 3</li>
-              <li>line 4</li>
-            </ul>
-            <button type="button" className="btn btn-lg btn-block btn-primary">
-              More Info
-            </button>
+            <h4 className="card-title pricing-card-title text-primary">
+              IPAD
+            </h4>
+            <h4 className="card-title pricing-card-title text-info">
+              32-inch TV
+            </h4>
+            <h4 className="card-title pricing-card-title text-success">
+              T-shirts
+            </h4>
           </div>
         </div>
         <div className="card mb-4 box-shadow">
           <div className="card-header">
-            <h4 className="my-0 font-weight-normal">Location</h4>
+            <h2 className="my-0 font-weight-normal">4:00 PM</h2>
           </div>
           <div className="card-body">
-            <h1 className="card-title pricing-card-title">
-              Houston<small className="text-muted">, TX</small>
-            </h1>
-            <ul className="list-unstyled mt-3 mb-4">
-              <li>line 1</li>
-              <li>line 2</li>
-              <li>line 3</li>
-              <li>line 4</li>
-            </ul>
-            <button type="button" className="btn btn-lg btn-block btn-primary">
-              More Info
-            </button>
+            <h4 className="card-title pricing-card-title text-primary">
+              IPAD
+            </h4>
+            <h4 className="card-title pricing-card-title text-info">
+              32-inch TV
+            </h4>
+            <h4 className="card-title pricing-card-title text-success">
+              T-shirts
+            </h4>
           </div>
         </div>
         <div className="card mb-4 box-shadow">
           <div className="card-header">
-            <h4 className="my-0 font-weight-normal">Hours</h4>
+            <h2 className="my-0 font-weight-normal">7:00 PM</h2>
           </div>
           <div className="card-body">
-            <h1 className="card-title pricing-card-title">MON - SUN</h1>
-            <ul className="list-unstyled mt-3 mb-4">
-              <li>line 1</li>
-              <li>line 2</li>
-              <li>line 3</li>
-              <li>line 4</li>
-            </ul>
-            <button type="button" className="btn btn-lg btn-block btn-primary">
-              More Info
-            </button>
+            <h4 className="card-title pricing-card-title text-primary">
+              IPAD
+            </h4>
+            <h4 className="card-title pricing-card-title text-info">
+              32-inch TV
+            </h4>
+            <h4 className="card-title pricing-card-title text-success">
+              T-shirts
+            </h4>
           </div>
         </div>
       </div>

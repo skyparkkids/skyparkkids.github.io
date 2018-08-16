@@ -4,9 +4,14 @@
   "private": true,
   "dependencies": {
     "react": "^16.3.2",
+    "react-device-detect": "^1.5.9",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
-    "react-scripts": "1.1.4"
+    "react-loading-image": "^0.4.1",
+    "react-preload-image": "^1.0.4",
+    "react-responsive-carousel": "^3.1.41",
+    "react-scripts": "1.1.4",
+    "reactjs-popup": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

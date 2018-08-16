@@ -1,0 +1,50 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Francois One", sans-serif;
+}
+.mySlides {
+  display: none;
+}
+.w3-tag,
+.fa {
+  cursor: pointer;
+}
+.w3-tag {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin-top: 6px;
+}
+#navbar {
+  opacity: 0.8;
+  z-index: 10;
+}
+.nav-link {
+  color: #fff !important;
+}
+.btn-pricing {
+  padding: 0;
+  font-size: 30px;
+}
+#pricing {
+  font-family: "Francois One", sans-serif;
+}
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}

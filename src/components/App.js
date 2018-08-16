@@ -1,45 +1,69 @@
-import React, { Component } from "react";
-import Menu from "./Menu";
-import Content from "./Content";
-import Social from "./Social";
+import React, {Component} from "react";
+import Popup from "reactjs-popup";
+import ImageLoader from 'react-loading-image';
+import {isMobile} from "react-device-detect";
+
+import Nav from "./Nav";
+import Slideshow from './Slideshow';
+import About from './About';
+import Pricing from './Pricing';
+import Rules from './Rules';
+import Contact from './Contact';
 import Footer from "./Footer";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      open: false
+    };
+  }
+
+  closeModal = () => {
+    this.setState({open: false});
+  };
+
   render() {
+    let popupClass = {
+      width: '50%'
+    };
+    if (isMobile) {
+      popupClass = {
+        width: '90%'
+      }
+    }
     return (
       <React.Fragment>
-        <Menu />
-        <main className="container mt-5 pt-5">
-          <div className="row mb-4">
-            <div className="col-sm-12 text-center">
-              <img
-                className="img-fluid mb-5"
-                width="60%"
-                alt="banner"
-                src="images/banner.png"
-              />
-            </div>
+        {/* <Popup
+          open={this.state.open}
+          closeOnDocumentClick
+          onClose={this.closeModal}
+          contentStyle={popupClass}>
+          <div>
+            <a className="modal-close" onClick={this.closeModal}>
+              &times;
+            </a>
+            <ImageLoader
+              className="img-fluid rounded"
+              src="./images/popup.jpg"
+              loading={() => <h2 className="text-center mt-4 mb-4">Loading...</h2>}
+              error={() => <div>Error</div>}/>
           </div>
+        </Popup> */}
+        <Nav/>
+        <Slideshow/>
+        <main className="container">
+          <About/>
 
-          <div className="jumbotron text-center">
-            <h1 className="display-4">Coming Soon!</h1>
-            <p className="lead">
-              Opening on <strong>Middle of June 2018</strong>
-            </p>
-            <hr />
-            <p>Have Questions?</p>
-            <p className="lead">
-              <a
-                className="btn btn-primary btn-lg"
-                href="mailto:ssjj77@naver.com"
-              >
-                Contact Us!
-              </a>
-            </p>
-          </div>
+          <Pricing/>
+
+          <Rules/>
+
+          <Contact/>
+
         </main>
 
-        <Footer />
+        <Footer/>
       </React.Fragment>
     );
   }
