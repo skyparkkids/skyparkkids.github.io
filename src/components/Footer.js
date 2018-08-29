@@ -1,6 +1,6 @@
 import React from "react";
-// import {TiSocialFacebookCircular, TiSocialInstagramCircular,
-// TiSocialTwitterCircular} from "react-icons/lib/ti";
+import {TiSocialFacebookCircular, TiSocialInstagramCircular, TiSocialTwitterCircular} from "react-icons/lib/ti";
+import {CONTACT, SOCIAL} from '../constants';
 
 const Footer = () => {
   return (
@@ -9,12 +9,13 @@ const Footer = () => {
         <div className="col-6 col-sm-4">
           <ul className="list-unstyled m-0">
             <li>
-              <strong>SKYPARKKIDS</strong>
+              <strong>{CONTACT.name}</strong>
             </li>
-            <li>9610 Jenson Dr.</li>
-            <li>Houston, TX 77093</li>
-            <li>346-571-5904</li>
-            {/* <li>Phone Number</li> */}
+            <li>{CONTACT.street}</li>
+            <li>{CONTACT.cityState}</li>
+            <li>
+              <a href={`tel:${CONTACT.phone}`}>{CONTACT.phone}</a>
+            </li>
           </ul>
         </div>
 
@@ -25,15 +26,15 @@ const Footer = () => {
             alt="banner"
             src="images/banner.png"/>
           <small className="d-block mb-3 text-muted">
-            ©2018 SKYPARKKIDS<br/>All right reserved
+            ©2018 {CONTACT.name}<br/>All rights reserved
           </small>
         </div>
 
-        {/* <div className="col-12 col-sm-4 text-right">
-          <TiSocialFacebookCircular width="40" height="40" />
-          <TiSocialInstagramCircular width="40" height="40" />
-          <TiSocialTwitterCircular width="40" height="40" />
-        </div> */}
+        <div className="col-12 col-sm-4 text-right">
+          <a href={SOCIAL.facebook} target="_blank"><TiSocialFacebookCircular width="40" height="40"/></a>
+          <a href={SOCIAL.instagram} target="_blank"><TiSocialInstagramCircular width="40" height="40"/></a>
+          {/* <a href="" target="_blank"><TiSocialTwitterCircular width="40" height="40"/></a> */}
+        </div>
       </div>
     </footer>
   );

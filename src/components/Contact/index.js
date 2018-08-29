@@ -1,5 +1,6 @@
 import React from 'react';
 import pdfFile from '../../files/employment.pdf';
+import {CONTACT, HOURS, SOCIAL} from '../../constants';
 
 const Contact = () => {
   return (
@@ -22,18 +23,23 @@ const Contact = () => {
 
         <div className="col-lg-4 mb-4">
           <h4>Contact Details</h4>
-          <p><i className="fas fa-map-marker-alt mr-2"/>9610 Jenson Dr. Houston, TX 77093</p>
+          <p><i className="fas fa-map-marker-alt mr-2"/>{CONTACT.address}</p>
           <p><i className="fas fa-phone mr-2"/>
-            <a href="tel:346-571-5904">346-571-5904</a>
+            <a href={`tel:${CONTACT.phone}`}>{CONTACT.phone}</a>
           </p>
           <p><i className="fas fa-envelope mr-2"/>
-            <a href="mailto:skyparkjensen@gmail.com">skyparkjensen@gmail.com</a>
+            <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+          </p>
+          <p><i className="fab fa-facebook mr-2"/>
+            <a href={SOCIAL.facebook} target="_blank">Facebook</a>
+          </p>
+          <p><i className="fab fa-instagram mr-2"/>
+            <a href={SOCIAL.instagram} target="_blank">Instagram</a>
           </p>
           <hr/>
           <h4>Hours</h4>
-          <p><i className="far fa-clock mr-2"/>
-            MON-FRI 10AM-9PM
-            <br/><i className="fas fa-clock mr-2"/>SAT-SUN 9AM-9PM
+          <p><i className="far fa-clock mr-2"/>{HOURS.week}
+            <br/><i className="fas fa-clock mr-2"/>{HOURS.weekend}
           </p>
           <hr/>
           <h4>Employment</h4>
