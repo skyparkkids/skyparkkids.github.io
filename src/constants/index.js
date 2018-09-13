@@ -8,8 +8,8 @@ export const CONTACT = {
 }
 
 export const HOURS = {
-    week: 'SUN-THU 12PM-8PM',
-    weekend: 'FRI-SAT 10AM-9PM'
+    week: 'MON-THU 12PM-8PM',
+    weekend: 'FRI-SUN 11AM-9PM'
 }
 
 export const SOCIAL = {

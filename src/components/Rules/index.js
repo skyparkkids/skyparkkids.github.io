@@ -4,12 +4,10 @@ const Rules = () => {
   return (
     <section id="rules" className="pt-5 pb-5">
       <h1 className="text-center">RULES</h1>
-      <p>SkyparkKids have height restrictions for safety reasons. Children must be
-        under 62 inches (157cm) tall to enter. A height limit of 62 inches would screen
-        out almost all children older than ten. We want to make sure each and every
-        guest is having fun, but more importantly, also being safe. Court Guards are
-        there to monitor our policies and rules, which are in place in order to ensure
-        the safety of everyone.</p>
+      <p>Allow children and teens (1 - 16). We want to make sure each and every guest
+        is having fun, but more importantly, also being safe. Court Guards are there to
+        monitor our policies and rules, which are in place in order to ensure the safety
+        of everyone.</p>
       <ul className="list-group">
         <li className="list-group-item active">Please be aware of our general rules:</li>
         <li className="list-group-item"><i className="fas fa-star mr-2"/>Every person

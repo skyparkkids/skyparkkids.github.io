@@ -15,7 +15,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      open: false
+      open: true
     };
   }
 
@@ -34,7 +34,7 @@ class App extends Component {
     }
     return (
       <React.Fragment>
-        {/* <Popup
+        <Popup
           open={this.state.open}
           closeOnDocumentClick
           onClose={this.closeModal}
@@ -45,11 +45,11 @@ class App extends Component {
             </a>
             <ImageLoader
               className="img-fluid rounded"
-              src="./images/popup.jpg"
+              src="./images/event1.jpg"
               loading={() => <h2 className="text-center mt-4 mb-4">Loading...</h2>}
               error={() => <div>Error</div>}/>
           </div>
-        </Popup> */}
+        </Popup>
         <Nav/>
         <Slideshow/>
         <main className="container">
