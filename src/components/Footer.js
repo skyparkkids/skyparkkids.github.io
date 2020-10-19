@@ -1,6 +1,10 @@
 import React from "react";
-import {TiSocialFacebookCircular, TiSocialInstagramCircular, TiSocialTwitterCircular} from "react-icons/lib/ti";
-import {CONTACT, SOCIAL} from '../constants';
+import {
+  TiSocialFacebookCircular,
+  TiSocialInstagramCircular,
+} from "react-icons/lib/ti";
+import { CONTACT, SOCIAL } from "../constants";
+import BannerImage from "../images/banner.png";
 
 const Footer = () => {
   return (
@@ -24,15 +28,22 @@ const Footer = () => {
             className="img-fluid mb-1"
             width="100"
             alt="banner"
-            src="images/banner.png"/>
+            src={BannerImage}
+          />
           <small className="d-block mb-3 text-muted">
-            ©2018 {CONTACT.name}<br/>All rights reserved
+            ©2018 {CONTACT.name}
+            <br />
+            All rights reserved
           </small>
         </div>
 
         <div className="col-12 col-sm-4 text-right">
-          <a href={SOCIAL.facebook} target="_blank"><TiSocialFacebookCircular width="40" height="40"/></a>
-          <a href={SOCIAL.instagram} target="_blank"><TiSocialInstagramCircular width="40" height="40"/></a>
+          <a href={SOCIAL.facebook} target="_blank">
+            <TiSocialFacebookCircular width="40" height="40" />
+          </a>
+          <a href={SOCIAL.instagram} target="_blank">
+            <TiSocialInstagramCircular width="40" height="40" />
+          </a>
           {/* <a href="" target="_blank"><TiSocialTwitterCircular width="40" height="40"/></a> */}
         </div>
       </div>

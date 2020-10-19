@@ -1,4 +1,5 @@
 import React from "react";
+import {CONTACT} from '../../constants';
 
 const Nav = () => {
   return (
@@ -6,7 +7,7 @@ const Nav = () => {
       id="navbar"
       className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="#home">SKYPARKKIDS</a>
+        <a className="navbar-brand" href="#home">{CONTACT.name}</a>
         <button
           className="navbar-toggler navbar-toggler-right"
           type="button"
