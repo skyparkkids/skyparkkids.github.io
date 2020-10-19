@@ -1,8 +1,10 @@
 {
   "name": "skypark",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "homepage": "https://skyparkjensen.com/",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "^16.3.2",
     "react-device-detect": "^1.5.9",
     "react-dom": "^16.3.2",
@@ -10,13 +12,28 @@
     "react-loading-image": "^0.4.1",
     "react-preload-image": "^1.0.4",
     "react-responsive-carousel": "^3.1.41",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^3.4.3",
     "reactjs-popup": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build && npm run clean",
+    "deploy": "gh-pages -d build",
+    "clean": "gh-pages-clean"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
